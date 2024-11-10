@@ -7,9 +7,9 @@ public class LogicScript : MonoBehaviour
     public int playerScore;
     public Text scoreText;
     public GameObject gameOverScreen;
-   [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource audioSource;
 
-  [ContextMenu("Increase Score")]
+    [ContextMenu("Increase Score")]
 
     public void restartGame()
     {
@@ -20,7 +20,7 @@ public class LogicScript : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
     }
-    
+
     // Start is called before the first frame update
     void Start()
     {
